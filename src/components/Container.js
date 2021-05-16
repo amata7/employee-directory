@@ -6,7 +6,7 @@ import EmployeeTable from "./EmployeeTable";
 function Container(props) {
   return (
     <div>
-      <div className="container-fluid">
+      <div className="container-fluid position-relative">
         <Header />
         <SearchBox />
         <EmployeeTable />
