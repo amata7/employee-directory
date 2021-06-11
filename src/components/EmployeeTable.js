@@ -4,6 +4,7 @@ import API from "../utils/API";
 class EmployeeTable extends Component {
   state = {
     result: {},
+    search: "",
   };
 
   componentDidMount() {
@@ -26,7 +27,9 @@ class EmployeeTable extends Component {
         <thead>
           <tr>
             <th scope="col">Image</th>
-            <th scope="col">Name</th>
+            <th scope="col">
+              Name<span>^</span>
+            </th>
             <th scope="col">Phone</th>
             <th scope="col">Email</th>
             <th scope="col">DOB</th>
